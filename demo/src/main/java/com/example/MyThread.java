@@ -36,12 +36,12 @@ public class MyThread extends Thread {
 
             switch (resourse) {
                 case "/":
-                    File file = new File("htdocs/");
+                    File file = new File("htdocs/index.html");
                     InputStream input = new FileInputStream(file);
                     out.writeBytes("HTTP/1.1 200 ok\n");
                     out.writeBytes("Content-Type: text/HTML\n");
                     out.writeBytes("Content-Length: " + file.length() + " \n");
-                    out.writeBytes("\r\n");
+                    out.writeBytes("\n");
                     byte[] buf = new byte[8192];
                     int n;
                     while (((n = input.read(buf)) != -1)) {
