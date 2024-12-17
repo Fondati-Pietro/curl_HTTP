@@ -1,0 +1,232 @@
+
+body{
+    background-color: #1B2223;
+}
+
+.logo{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+/* NAVBAR */
+
+.nav_bg{
+    background-color: #1B2223;
+}
+
+.nav-reg{
+    background-color: #3A4F50;
+}
+
+.dropdown_bg:hover{
+    background-color: #3A4F50;
+}
+
+/* CAROUSEL */
+
+.jump{
+    color: #0EF6CC;
+}
+
+.button_carousel_s{
+    margin-left: 4rem;
+}
+
+.button_carousel_r{
+    margin-right: 4rem;
+}
+
+.immagini_carousel{
+    height: 500px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.consigliati{
+    font-size: 30px;
+}
+
+.button_carousel_sm{
+    margin-right: 25rem;
+}
+
+.button_carousel_rm{
+    margin-right: 10rem;
+}
+
+/* SCARPE */
+
+.card_scarpe{
+    background-color: #0EF6CC;
+}
+
+.card_scarpe:hover{
+    opacity: 85%;
+}
+
+.scarpe{
+    width: 286px;
+    height: 200px;
+}
+
+/* MAGLIETTE */
+
+.maglia{
+    width: 286px;
+    height: 280px;
+}
+
+/* ICONE */
+
+.img-icone{
+
+    height: 100px;
+    width: 100px;
+}
+
+/* BOTTONE */
+
+.bottone{
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+}
+
+/* SCARPE */
+
+.body_scarpe{
+    background-color: #e2f2f0e8;
+}
+
+.pos_scarpe{
+    height: 500px;
+}
+
+@media only screen and (max-width: 767px) {
+    
+    .pos_scarpe{
+        height:350px;
+    }
+}
+
+/*OWL CAROUSEL*/
+
+.owl-carousel {
+    height: 270px;
+}
+
+.dim_logo {
+    width: 100%;
+    height: 220px;
+}
+
+.demo{
+    margin-bottom: 20px;
+}
+
+
+@media only screen and (max-width: 1182px) {
+    
+    .dim_logo{
+        height: 140px;
+     }
+
+     .owl-carousel {
+        height: 190px;
+    }
+
+     .demo{
+        margin-bottom: 50px;
+     }
+}
+
+@media only screen and (max-width: 767px) {
+    
+    .dim_logo{
+        width: 50%;
+     }
+}
+
+/* NOVITA' */
+
+.immagini_novità{
+    height: 500px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.button_carousel_s_novità{
+    margin-left: 10rem;
+}
+
+.button_carousel_r_novità{
+    margin-right: 10rem;
+}
+
+
+@media only screen and (max-width: 840px) {
+
+    .immagini_novità{
+        height: 500px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .button_carousel_s_novità{
+        margin-left: 1rem;
+    }
+    
+    .button_carousel_r_novità{
+        margin-right: 1rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    
+    .immagini_novità{
+        height:350px;
+        width: 100%;
+    }
+}
+
+/* PRESENTAZIONI */
+
+.img_pres{
+    height: 400px;
+}
+
+.hr{
+    margin-top: 50px;
+    height: 25px;
+    border-width:0;
+    background-color:#0EF6CC;
+}
+
+.pres{
+    margin-top: 100px;
+}
+
+@media only screen and (max-width: 992px) {
+
+    .hr{
+        margin-top: 180px;
+    }
+
+    .pres{
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .hr{
+        margin-top: 970px;
+    }
+}
+
+/* VIDEO */
+
+.vid{
+    height: 600px;
+} 
