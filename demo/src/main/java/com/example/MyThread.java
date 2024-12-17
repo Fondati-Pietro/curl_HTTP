@@ -39,9 +39,17 @@ public class MyThread extends Thread {
             if (resource.equals("/")) {
                 resource = "/index.html";
             }
+            if (resource.endsWith("/")) {
+                resource = resource + "index.html";
+            }
 
             File file = new File("htdocs" + resource);
-            if (file.exists()) {
+            if (file.isDirectory()) {
+                out.writeBytes("HTTP/1.1 301 Moved Permanently");
+                out.writeBytes("Content-Length: 0\n");
+                out.writeBytes("Location: " + resource + "/\n");
+                out.writeBytes("\n");
+            } else if (file.exists()) {
                 out.writeBytes("HTTP/1.1 200 ok\n");
                 out.writeBytes("Content-Type: " + file.length() + "\n");
                 out.writeBytes("Content-Length: " + getContentType(file) + " \n");
@@ -60,6 +68,7 @@ public class MyThread extends Thread {
                 out.writeBytes("Content-Length: " + error.length() + " \n");
                 out.writeBytes("Content-Type: type/plain\n");
                 out.writeBytes("\r\n");
+
             }
             s.close();
 
